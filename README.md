@@ -6,6 +6,7 @@
 05111840000
 
 ### No. 1
+---------------------------
 Sebutkan webserver yang digunakan pada "testing.mekanis.me"!
 ```bash
 http.host == testing.mekanis.me
@@ -16,6 +17,7 @@ Display capture ```http.host``` digunakan ketika ingin menampilkan paket http de
 Dalam detail tersebut terdapat keterangan web server yang digunakan web ```testing.mekanis.me``` adalah nginx/1.14.0 (Ubuntu)
 
 ### No. 3
+-------------------------------
 Cari username dan password ketika login di "ppid.dpr.go.id"!
 ```bash
 http.request.method == POST
@@ -26,6 +28,7 @@ Display picture ```http.request.method``` bermaksud untuk menampilkan paket http
 Berdasarkan data tersebut **username: 10pemuda** dan **password: guncangdunia**
 
 ### No. 5
+---------------------------------
 Ikuti perintah di aku.pengen.pw! Username dan password bisa didapatkan dari file .pcapng!
 
 Pada saat memasuki web ```aku.pengen.pw``` dibutuhkan *username* dan *password*, oleh karena itu pertama-tama harus dicari *username* dan *passwordnya* melalui wireshark. 
