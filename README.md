@@ -114,6 +114,23 @@ dst port 443
 
 ```dst``` dalam ```dst port``` berarti ```destination``` yang mana berarti akan menangkap semua paket yang menuju ke port 443. 
 
+## No. 14
+-----------------------------------------
+**Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!**
+
+Hal pertama yang harus dilakukan adalah mencari ip
+<p align="center"><img width="412,5" alt="Screen Shot 2020-10-17 at 01 02 41" src="https://user-images.githubusercontent.com/62136051/96287404-75ff7b80-1014-11eb-8395-e9033709c4fd.png"></p>
+
+kemudian menggunakan capture filter
+```bash
+src host 192.168.18.14
+```
+
+<p align="center"><img width="414" alt="Screen Shot 2020-10-17 at 01 02 51" src="https://user-images.githubusercontent.com/62136051/96287422-7c8df300-1014-11eb-88ed-707edcb26216.png"></p>
+
+
+```src``` dalam ```src host``` berarti ```source``` yaitu **asal**
+
 ### No. 15
 -----------------------------------------
 **Filter sehingga wireshark hanya mengambil paket yang tujuannya ke monta.if.its.ac.id!**
