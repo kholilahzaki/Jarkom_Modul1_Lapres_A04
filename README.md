@@ -7,7 +7,7 @@
 
 ### No. 1
 ---------------------------
-Sebutkan webserver yang digunakan pada "testing.mekanis.me"!
+**Sebutkan webserver yang digunakan pada "testing.mekanis.me"!**
 ```bash
 http.host == testing.mekanis.me
 ```
@@ -18,7 +18,7 @@ Dalam detail tersebut terdapat keterangan web server yang digunakan web ```testi
 
 ### No. 3
 -------------------------------
-Cari username dan password ketika login di "ppid.dpr.go.id"!
+**Cari username dan password ketika login di "ppid.dpr.go.id"!**
 ```bash
 http.request.method == POST
 ```
@@ -29,7 +29,7 @@ Berdasarkan data tersebut **username: 10pemuda** dan **password: guncangdunia**
 
 ### No. 5
 ---------------------------------
-Ikuti perintah di aku.pengen.pw! Username dan password bisa didapatkan dari file .pcapng!
+**Ikuti perintah di aku.pengen.pw! Username dan password bisa didapatkan dari file .pcapng!**
 
 Pada saat memasuki web ```aku.pengen.pw``` dibutuhkan *username* dan *password*, oleh karena itu pertama-tama harus dicari *username* dan *passwordnya* melalui wireshark. 
 
@@ -40,3 +40,72 @@ Karena web ```aku.pengen.pw``` menggunakan *basic authentication* maka dari itu 
 Setelah login akan terlihat halaman seperti ini 
 
 <p align="center"><img width="425,5" alt="j_5_2" src="https://user-images.githubusercontent.com/62136051/96272037-28791380-1000-11eb-9a4b-1726e24963c2.png"></p>
+
+### No. 8
+--------------------------------
+
+**Cari objek apa saja yang didownload (RETR) dari koneksi FTP dengan Microsoft FTP Service!**
+ Langkah pertama yang harus dilakukan adalah mencari paket yang berasal dari koneksi FTP dengan Microsoft FTP Service. Langkah ini dilakukan menggunakan display capture ```ftp contains "Microsoft"```.
+ 
+ <p align="center"><img width="493,5" alt="8_1" src="https://user-images.githubusercontent.com/62136051/96280061-156b4100-100a-11eb-91f3-831910a7efe4.png"></p>
+ 
+ Setelah mendapatkan IP address dari Microsoft FTP Service, kita display capture lagi untuk mencari objek apa saja yang didownload menggunakan command ```RETR```. Dan didapatkan hasil seperti ini
+ 
+ <p align="center"><img width="493,5" alt="8_2" src="https://user-images.githubusercontent.com/62136051/96280048-10a68d00-100a-11eb-943c-a28a91d30dcc.png"></p>
+ 
+### No. 9
+----------------------------------
+
+**Cari username dan password ketika login FTP pada localhost!**
+```bash
+ftp && ftp.request.command == PASS || ftp.request.command == USER
+```
+
+<p align="center"><img width="489" alt="Screen Shot 2020-10-17 at 00 26 27" src="https://user-images.githubusercontent.com/62136051/96283875-692c5900-100f-11eb-8dac-96354612bc59.png"></p>
+
+Karena protokol yang digunakan adalah FTP maka digunakan display capture ```ftp``` dan yang diminta adalah username dan password, jadi digunakan display capture  ```ftp.request.command == PASS || ftp.request.command == USER```
+
+### No. 11
+-------------------------------
+**Filter sehingga wireshark hanya mengambil paket yang mengandung port 21!**
+```bash
+port 21
+```
+<p align="center"><img width="632,25" alt="Screen Shot 2020-10-17 at 00 30 47" src="https://user-images.githubusercontent.com/62136051/96284320-025b6f80-1010-11eb-8dd9-827177120794.png"></p>
+
+```Port 21``` merupakan port untuk localhost, jadi untuk membuktikannya harus ada aktivitas dari localhost, disini saya mencoba mengaktifkan koneksi ftp.
+
+### No. 12
+--------------------------------
+**Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80!**
+
+```bash
+src port 80
+```
+
+<p align="center"><img width="409" alt="Screen Shot 2020-10-17 at 00 35 26" src="https://user-images.githubusercontent.com/62136051/96284777-a80ede80-1010-11eb-8817-831fe6c76e46.png"></p>
+
+```src port 80``` merupakan capture filter untuk menangkap semua paket yang berasal dari port 80, disini kami membuktikan dengan mengakses suatu web dengan berasal dari port 80.
+
+### No. 13
+------------------------------------------
+**Filter sehingga wireshark hanya menampilkan paket yang menuju port 443!**
+```bash
+dst port 443
+```
+<p align="center"><img width="465,5" alt="Screen Shot 2020-10-17 at 00 40 54" src="https://user-images.githubusercontent.com/62136051/96285352-6cc0df80-1011-11eb-80b1-e84edde65dbd.png"></p>
+
+```dst``` dalam ```dst port``` berarti ```destination``` yang mana berarti akan menangkap semua paket yang menuju ke port 443. 
+
+### No. 15
+-----------------------------------------
+**Filter sehingga wireshark hanya mengambil paket yang tujuannya ke monta.if.its.ac.id!**
+```bash
+Dst host monta.if.its.ac.id
+```
+
+<p align="center"><img width="425,5" alt="Screen Shot 2020-10-17 at 00 45 19" src="https://user-images.githubusercontent.com/62136051/96285829-09837d00-1012-11eb-814f-594f673d4242.png"></p>
+
+Sama seperti nomor 13, ```dst``` dalam ```Dst host monta.if.its.ac.id``` berarti ```Destination``` yang mana keseluruhan capture nya bermaksud hanya menangkap paket yang tujuannya ke monta.if.ac.id.
+
+
