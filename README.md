@@ -16,6 +16,23 @@ Display capture ```http.host``` digunakan ketika ingin menampilkan paket http de
 
 Dalam detail tersebut terdapat keterangan web server yang digunakan web ```testing.mekanis.me``` adalah nginx/1.14.0 (Ubuntu)
 
+### No. 2
+-----------------------------
+**Simpan gambar "Tim_Kunjungan_Kerja_BAKN_DPR_RI_ke_Sukabumi141436.jpg"!**
+```bash
+http contains "Tim_Kunjungan_Kerja_BAKN_DPR_RI_ke_Sukabumi141436.jpg"
+```
+<p align="center"><img width="490" alt="Screen Shot 2020-10-17 at 00 51 48" src="https://user-images.githubusercontent.com/62136051/96286431-f1602d80-1012-11eb-9f4d-57bb77d20b71.png"></p>
+
+Untuk menyimpan gambar yang diminta, pertama-tama harus dilakukan display filter agar yang ditampilkan hanya paket yang berisi gambar yang diminta. Setelah itu paket tersebut di export dan disimpan.
+
+<p align="center"><img width="376" alt="Screen Shot 2020-10-17 at 00 52 17" src="https://user-images.githubusercontent.com/62136051/96286475-0210a380-1013-11eb-8bae-710ce805d46a.png"></p>
+
+Berikut adalah gambar yang diminta
+
+<p align="center"><img width="376" src="https://user-images.githubusercontent.com/62136051/96287009-da6e0b00-1013-11eb-96fd-2095ec1fc37f.jpg"></p>
+
+
 ### No. 3
 -------------------------------
 **Cari username dan password ketika login di "ppid.dpr.go.id"!**
