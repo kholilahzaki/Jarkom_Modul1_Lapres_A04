@@ -74,11 +74,18 @@ Setelah login akan terlihat halaman seperti ini
 **Seseorang menyimpan file zip melalui FTP dengan nama "Answer.zip". Simpan dan Buka file "Open This.pdf" di Answer.zip. Untuk mendapatkan password zipnya, temukan dalam file zipkey.txt (passwordnya adalah isi dari file txt tersebut).**
 
 Pertama kita mencari file zip bernama Answer.zip dan zipkey.txt dengan cara menulis `ftp-data` lalu klik ctrl+f dan ketik Answer.zip. Setelah itu klik kanan, lalu plih follow
-TCp Stream, lalu show and save data as raw, lalu save as Answer.zip. Begitu juga saat mendownload zipkey.txt. Setelah di download gunakan password yang ada dalam zipkey.txt 
+TCP Stream, lalu show and save data as raw, lalu save as Answer.zip. Begitu juga saat mendownload zipkey.txt. Setelah di download gunakan password yang ada dalam zipkey.txt 
 untuk meng-ekstrak file zip tersebut. Password yang didapat sebagai berikut.
 <p align="center"><img width="500" src="https://user-images.githubusercontent.com/61299072/96328171-2e0b4380-106a-11eb-8415-3a89231fff1d.PNG"></p><br>
 Setelah file sudah diekstrak lalu buka file Open This.pdf. Hasilnya sebagai berikut.
 <p align="center"><img width="500" src="https://user-images.githubusercontent.com/61299072/96328413-e934dc00-106c-11eb-850a-e1ffeefcf6b6.PNG"></p>
+
+
+### No. 7
+--------------------------------
+**Ada 500 file zip yang disimpan ke FTP Server dengan nama 1.zip, 2.zip, ..., 500.zip. Salah satunya berisi pdf yang berisi puisi. Simpan dan Buka file pdf tersebut.
+Your Super Mega Ultra Rare Hint = nama pdf-nya "Yes.pdf"**
+
 
 ### No. 8
 --------------------------------
@@ -103,6 +110,18 @@ ftp && ftp.request.command == PASS || ftp.request.command == USER
 <p align="center"><img width="489" alt="Screen Shot 2020-10-17 at 00 26 27" src="https://user-images.githubusercontent.com/62136051/96283875-692c5900-100f-11eb-8dac-96354612bc59.png"></p>
 
 Karena protokol yang digunakan adalah FTP maka digunakan display capture ```ftp``` dan yang diminta adalah username dan password, jadi digunakan display capture  ```ftp.request.command == PASS || ftp.request.command == USER```
+
+### No. 10
+---------------------------------
+**Cari file .pdf di wireshark lalu download dan buka file tersebut!
+clue: "25 50 44 46" 
+**
+
+Pada display filter ketik `http contains".pdf"`
+<p align="center"><img src="https://user-images.githubusercontent.com/61299072/96328546-73ca0b00-106e-11eb-9a93-9e734b19ac98.PNG"></p>
+Cara mendownload file pdf tersebut sama seperti sebelum-sebelumnya yaitu setelah paket berisi file pdf tersebut ditemukan, lalu klik kanan dan pilih follow TCP stream. 
+Setelah itu show and save data as raw, lalu save as 1759.pdf<br>
+<p align="center"><img width="500" src="https://user-images.githubusercontent.com/61299072/96328642-8d1f8700-106f-11eb-845c-c9078b768472.PNG"></p>
 
 ### No. 11
 -------------------------------
