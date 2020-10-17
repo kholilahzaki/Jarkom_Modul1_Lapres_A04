@@ -86,6 +86,19 @@ Setelah file sudah diekstrak lalu buka file Open This.pdf. Hasilnya sebagai beri
 **Ada 500 file zip yang disimpan ke FTP Server dengan nama 1.zip, 2.zip, ..., 500.zip. Salah satunya berisi pdf yang berisi puisi. Simpan dan Buka file pdf tersebut.
 Your Super Mega Ultra Rare Hint = nama pdf-nya "Yes.pdf"**
 
+Hal pertama yang harus dilakukan adalah mencari file .zip mana yang berisi puisi dengan nama **"Yes.Pdf"**. Hal ini dilakukan dengan cara display capture
+
+```bash
+ftp-data && frame contains "Yes.pdf"
+```
+<p align="center"><img width="439" alt="Screen Shot 2020-10-17 at 20 53 18" src="https://user-images.githubusercontent.com/62136051/96337594-ea8cf580-10ba-11eb-9872-92b24f756aa6.png"></p>
+
+Gambar diatas memperlihatkan bahwa file puisi berada didalam file **473.zip**, selanjutnya lakukan **follow** lalu **TCP Stream** dan simpan data dalam bentuk **raw** setelah itu simpan menggunakan nama **473.zip**. Setelah disimpan, file akan terlihat sebagaimana berikut dibawah ini.
+
+<p align="center"><img width="393,5" alt="Screen Shot 2020-10-17 at 20 53 28" src="https://user-images.githubusercontent.com/62136051/96337596-ec56b900-10ba-11eb-962e-451fda0a941b.png"></p>
+
+Berikut adalah puisi dari file **Yes.pdf**
+<p align="center"><img width="349,5" alt="Screen Shot 2020-10-17 at 20 53 36" src="https://user-images.githubusercontent.com/62136051/96337600-ecef4f80-10ba-11eb-8fa5-a784f3317223.png"></p>
 
 ### No. 8
 --------------------------------
