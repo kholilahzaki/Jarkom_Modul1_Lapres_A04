@@ -114,8 +114,7 @@ Karena protokol yang digunakan adalah FTP maka digunakan display capture ```ftp`
 ### No. 10
 ---------------------------------
 **Cari file .pdf di wireshark lalu download dan buka file tersebut!
-clue: "25 50 44 46" 
-**
+clue: "25 50 44 46"**
 
 Pada display filter ketik `http contains".pdf"`
 <p align="center"><img src="https://user-images.githubusercontent.com/61299072/96328546-73ca0b00-106e-11eb-9a93-9e734b19ac98.PNG"></p>
