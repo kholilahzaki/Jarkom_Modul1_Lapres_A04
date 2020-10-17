@@ -3,7 +3,7 @@
 - I Gusti Agung Chintya Prema Dewi<br />
 05111840000130
 - Kholilah Zaki Lismia <br />
-05111840000
+05111840000159
 
 ### No. 1
 ---------------------------
@@ -43,6 +43,15 @@ Display picture ```http.request.method``` bermaksud untuk menampilkan paket http
 <p align="center"><img width="497" alt="j_3" src="https://user-images.githubusercontent.com/62136051/96265449-05e2fc80-0ff8-11eb-9c04-a9ead45e33d2.png"></p>
 
 Berdasarkan data tersebut **username: 10pemuda** dan **password: guncangdunia**
+
+### No. 4
+---------------------------------
+**Temukan**
+```
+http.authbasic
+```
+Display filter diatas digunakan untuk menemukan paket dari web yang menggunakan basic authentication method. Hasilnya sebagai berikut.
+![no 4](https://user-images.githubusercontent.com/61299072/96327240-fe583d80-1061-11eb-8979-28fb9f2d8987.PNG)
 
 ### No. 5
 ---------------------------------
