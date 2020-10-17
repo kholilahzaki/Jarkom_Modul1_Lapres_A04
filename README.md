@@ -46,12 +46,13 @@ Berdasarkan data tersebut **username: 10pemuda** dan **password: guncangdunia**
 
 ### No. 4
 ---------------------------------
-**Temukan**
+**Temukan paket dari web-web yang menggunakan basic authentication method!**
 ```
 http.authbasic
 ```
-Display filter diatas digunakan untuk menemukan paket dari web yang menggunakan basic authentication method. Hasilnya sebagai berikut.
-![no 4](https://user-images.githubusercontent.com/61299072/96327240-fe583d80-1061-11eb-8979-28fb9f2d8987.PNG)
+Display filter diatas digunakan untuk menemukan paket dari web yang menggunakan basic authentication method. Hasilnya sebagai berikut.<br>
+
+<p align="center"><img src="https://user-images.githubusercontent.com/61299072/96327240-fe583d80-1061-11eb-8979-28fb9f2d8987.PNG"></p>
 
 ### No. 5
 ---------------------------------
@@ -66,6 +67,18 @@ Karena web ```aku.pengen.pw``` menggunakan *basic authentication* maka dari itu 
 Setelah login akan terlihat halaman seperti ini 
 
 <p align="center"><img width="425,5" alt="j_5_2" src="https://user-images.githubusercontent.com/62136051/96272037-28791380-1000-11eb-9a4b-1726e24963c2.png"></p>
+
+
+### No. 6
+--------------------------------
+**Seseorang menyimpan file zip melalui FTP dengan nama "Answer.zip". Simpan dan Buka file "Open This.pdf" di Answer.zip. Untuk mendapatkan password zipnya, temukan dalam file zipkey.txt (passwordnya adalah isi dari file txt tersebut).**
+
+Pertama kita mencari file zip bernama Answer.zip dan zipkey.txt dengan cara menulis `ftp-data` lalu klik ctrl+f dan ketik Answer.zip. Setelah itu klik kanan, lalu plih follow
+TCp Stream, lalu show and save data as raw, lalu save as Answer.zip. Begitu juga saat mendownload zipkey.txt. Setelah di download gunakan password yang ada dalam zipkey.txt 
+untuk meng-ekstrak file zip tersebut. Password yang didapat sebagai berikut.
+<p align="center"><img arc="https://user-images.githubusercontent.com/61299072/96328171-2e0b4380-106a-11eb-8415-3a89231fff1d.PNG"></p>
+Setelah file sudah diekstrak lalu buka file Open This.pdf. Hasilnya sebagai berikut.
+<p align="center"><img src="https://user-images.githubusercontent.com/61299072/96328413-e934dc00-106c-11eb-850a-e1ffeefcf6b6.PNG"></p>
 
 ### No. 8
 --------------------------------
